@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- I put the title to the page  -->
     <title>My personal portfolio</title>
+    <!-- I add the main part of the page -->
     <meta Tomas= "Description" content = "Personal portfolio of Tomas David Restrepo Osorio as a Riwi Developer.">
 </head>
 <body>
+    
     <center>
+    <!-- I add the main part of the page -->
     <h1>Tomas David Restrepo Osorio - Riwi Developer</h1>
+
+    <!--I add a small navigation menu -->
+    <nav>
+                <hr><br><a href="Iam.html" target="_blank">About Me</a>
+                <br><a href="projects.html">Projects</a>
+                <br><a href="contacto.html">Conctact</a><hr>
+            </nav>
     </center>
+
     <section>
         <center>
+        <!--I add a presentation section-->
         <h2>About me</h2>
         <p>Hello i am Tomas David Restrepo Osorio.</p>
         <p>I like creating things and I am very interested in new technologies about programming and I really like the front.</p>
-        <p>Im 17 years old, I love play videogames and I like to invest in my knowledge</p>
-        <ul>
+        <p>Im 17 years old,i love play videogames and I like to invest in my knowledge.</p>
+
+        <!--I add a presentation image-->
+        <hr><h2>Me</h2><img src="https://media-bog2-1.cdn.whatsapp.net/v/t61.24694-24/491840360_1212975883512168_8699781532493506551_n.jpg?ccb=11-4&oh=01_Q5Aa1gGxnTRQWXLxsGOAPYdq3NgsEUUeCrZ8d1zB0_U_eRO8LA&oe=68389273&_nc_sid=5e03e0&_nc_cat=100" alt = "Tomas photo" width="500">
+        
+        <!--I add my skill list-->
+        <section>
+        <hr><ul>
+            <h2>My knowledge</h2>
             <li>HMTL</li>
             <li>Python</li> 
-            <li>Java</li>
-            <li>JavaScript</li>
+            <li>Logic thinking </li>
         </ul>
-        <img src="https://media-bog2-1.cdn.whatsapp.net/v/t61.24694-24/491840360_1212975883512168_8699781532493506551_n.jpg?ccb=11-4&oh=01_Q5Aa1gGxnTRQWXLxsGOAPYdq3NgsEUUeCrZ8d1zB0_U_eRO8LA&oe=68389273&_nc_sid=5e03e0&_nc_cat=100" alt = "Tomas photo" width="500">
+
+        <!--I add my project section-->
         <section>
-            <h2>PROJECTS</h2>
-            <p>This is my first project where i built my personal portfolio using Python</p>
+            <hr><h2>Projects</h2>
+            <h3>Project 1: Inventory</h3>
+            <h3>Project 2: Note management</h3>
+            <p>These are my python based projects</p>
+            <hr><h2>Project portfolio image</h2>
+        </section>
+
+            <!--I add a representative image to my projects-->
+            <img src="Captura desde 2025-05-19 13-02-13.png" alt ="Project portfolio image" width="500">
+            
+            <!--I add a Table of projects-->            
+            <hr><h2>List</h2>
             <table border="1">
             <tr>
                 <th>PROJECT NAME</th>
@@ -37,10 +67,35 @@
                 <td>Python</td>
                 <td><a href="https://github.com/MaxterDuck/proyecto_semana1/blob/main/proyecto_semana1.py">Project 1:</a></td>
             </tr>
+            <tr>
+                <td>Note management</td>
+                <td>Python</td>
+                <td><a href="https://github.com/MaxterDuck/Semana_2/blob/main/Proyecto%20Semana%202">Project 2:</a></td>
+            </tr>
             </table>
+
+            <!--I Add form about contact-->
+            <hr><h2>Form </h2>
+            <form action="/send" method="post">
+                <ul>
+                <label for="name">Name:</label>
+                <li><input type="text" id="name" name="name" required></li>
+
+                <label for="email">Email:</label>
+                <li><input type="email" id="email" name="email" required></li>
+
+                <label for="message">Message:</label>
+                <li><textarea id="message" name="message" rows="4" required></textarea></li>
+
+                <li><input type="submit" value="Send"></li>
+                </ul>
+            </form>
+            
+            <!--I add my social media-->
+            <hr><h2>Social Media</h2>
+            <a href="https://www.instagram.com/tomasrestrep/" target="_blank">Instagram</a>
+            
         </section>
-        <h2>Project portfolio image</h2>
-        <img src="Captura desde 2025-05-19 13-02-13.png" alt ="Project portfolio image" width="700">
         </center>
     </section>
 </body>
