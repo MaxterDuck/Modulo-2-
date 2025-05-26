@@ -1,0 +1,15 @@
+div {
+    color:red;
+}
+
+.highlight {
+    color:rgb(245, 2, 95); 
+}
+
+#special {
+    color:rgb(1, 100, 117);
+}
+
+body {
+    background-color: rgb(4, 250, 188);
+}
