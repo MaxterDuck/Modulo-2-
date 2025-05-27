@@ -1,22 +1,49 @@
+/* Global Styles */
+
+page {
+    color: rgb(255, 255, 255);
+}
+
+/* Centered Styles */
 div {
-    color:rgb(253, 129, 222);
+    color: rgb(255, 255, 255);
 }
 
 .highlight {
-    color:rgb(231, 85, 141); 
+    color: rgb(255, 0, 0);
 }
 
 #special {
-    color:rgb(1, 100, 117);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: azure;
+}
+
+h2 {
+    color: azure;
+}
+
+p {
+    color: azure;
+}
+
+a {
+    color: gray;
 }
 
 body {
-    background-color: rgb(125, 104, 245);
+    background-image: url(https://i.pinimg.com/736x/e2/f9/31/e2f931b19ed72d82e04f6d0aaf9d98e4.jpg);
+    background-size: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Box Styles */
 .box {
-    background-color: ivory;
-    border: 2px solid rgb(253, 119, 163);
-    box-shadow: 5px 5px 10px rgba(rgb(178, 81, 235), green, blue, 0.6);
+    background-color: rgb(155, 155, 143);
+    border: 2px solid rgb(0, 81, 255);
+    box-shadow: 5px 5px 10px rgba(253, 5, 5, 1, 1, 0.6);
     padding: 30px;
     margin: 15px;
 }
@@ -25,7 +52,7 @@ body {
     width: 400px;
     padding: 30px;
     margin: 15px;
-    border: 3px solid #bf90f5
+    border: 3px solid #ffffff;
 }
 
 .inline-block {
@@ -39,28 +66,31 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
 
 .rotate-box {
     width: 100px;
     height: 100px;
-    background-color: blueviolet;
-    transform: rotate(45deg);
+    background-color: rgb(109, 108, 108);
+    transform: rotate(-180deg);
 }
 
+/* Hover Styles */
 a:hover {
-    color: aqua;
+    color: rgb(0, 68, 255);
     text-decoration: underline;
 }
 
+/* Pseudo-element Styles */
 .box::before {
     content: "New!";
-    color: rgb(23, 0, 233);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
+/* Animation Styles */
 .fade-in {
     animation: fade 2ms ease-in-out;
 }
