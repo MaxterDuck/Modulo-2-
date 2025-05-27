@@ -31,6 +31,7 @@ p {
 
 a {
     color: gray;
+    font-size:large
 }
 
 body {
@@ -44,8 +45,9 @@ body {
     background-color: rgba(99, 16, 233, 0.37);
     border: 2px solid rgb(45, 89, 231);
     box-shadow: 10px 5px 5px rgb(69, 236, 186);
-    padding: 30px;
+    padding: 20px;
     margin: 15px;
+    width: 280px;
 }
 
 .content {
@@ -59,7 +61,7 @@ body {
     display: inline-block;
     width: 200px;
     height: 200px;
-    background-color: hotpink;
+    background-color: rgb(228, 21, 125);
 }
 
 .fixed-box {
@@ -71,7 +73,7 @@ body {
 }
 
 .rotate-box {
-    width: 100px;
+    width: 280px;
     height: 100px;
     background-color: rgb(109, 108, 108);
     transform: rotate(-180deg);
