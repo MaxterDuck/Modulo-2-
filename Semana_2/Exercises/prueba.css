@@ -1,0 +1,26 @@
+.card {
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .card img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .container:hover > .card:not(:hover) {
+    opacity: 0.3;
+  }
+  

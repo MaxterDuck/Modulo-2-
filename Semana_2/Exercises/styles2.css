@@ -1,0 +1,51 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  /* Sección del perfil */
+  .perfil {
+    padding: 20px;
+  }
+  
+  .perfil img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Sección de habilidades */
+  .habilidades {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .habilidades ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .habilidades li {
+    padding: 5px 0;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
