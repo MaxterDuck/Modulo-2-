@@ -41,9 +41,9 @@ body {
 
 /* Box Styles */
 .box {
-    background-color: rgb(155, 155, 143);
-    border: 2px solid rgb(0, 81, 255);
-    box-shadow: 5px 5px 10px rgba(253, 5, 5, 1, 1, 0.6);
+    background-color: rgba(99, 16, 233, 0.37);
+    border: 2px solid rgb(45, 89, 231);
+    box-shadow: 10px 5px 5px rgb(69, 236, 186);
     padding: 30px;
     margin: 15px;
 }
