@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 header {
-    background-color: blueviolet;
+    background-color: rgb(160, 38, 172);
+    padding-top: 1%;
+    padding-bottom: 1%;
 
 }
 
@@ -9,5 +13,70 @@ img {
 }
 
 body {
-    background-color: blueviolet;
+    background-color: rgb(160, 38, 172);
+    margin: 0;
+    padding: 0;
+}
+
+
+.section-1 {
+    width: 100%;
+    margin: 0%;
+    padding:0px;  
+    position:static
+    
+}
+
+
+.menu-letters {
+    color:white;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-weight:900;
+}
+
+
+
+
+.navbar {
+    
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(122, 58, 141);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+       
+}
+
+.title {
+    padding-bottom: 1%;
+    text-align: center;
+    color: rgb(255, 217, 0);
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-weight:900;
+
+    
+}
+
+
+
+@media (max-width: 480px) {
+ 
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+ 
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+}
+
+
+@media (min-width: 1025px) {
+  
 }
