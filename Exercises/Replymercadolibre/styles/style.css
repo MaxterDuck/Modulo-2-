@@ -1,0 +1,26 @@
+.navbar {
+    background-color: yellow;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 359px;
+    max-width: 134px;
+}
+
+.search {
+    min-width: 480px;
+    max-width: 588px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 1.5px;
+    padding: 4px;
+    height: 20px;
+    margin-left: 8px;
+}
