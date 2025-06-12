@@ -1,26 +1,284 @@
-.navbar {
-    background-color: yellow;
-    width: 100%;
+/* Reset básico */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a, input, button {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #ededed;
+}
+
+.ml-header {
+    background: #ffe600;
+    padding: 16px 0 0 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.ml-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ml-logo {
+    width: 134px;
+    height: 34px;
+    background: url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.5.1/mercadolibre/logo__large_plus.png') no-repeat center/contain;
+}
+
+.ml-search {
+    flex: 1;
+    display: flex;
+    margin: 0 32px;
+}
+
+.ml-search input {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    font-size: 16px;
+}
+
+.ml-search button {
+    width: 44px;
+    background: #fff;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    background: url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.5.1/mercadolibre/search-icon.svg') no-repeat center/60%;
+    cursor: pointer;
+}
+
+.ml-nav a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.ml-nav a:hover {
+    color: #3483fa;
+}
+
+.ml-categories-bar {
+    background: #ffe600;
+    border-top: 1px solid #fffde7;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    font-size: 15px;
+}
+
+.ml-categories-bar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.ml-categories-bar a:hover {
+    color: #3483fa;
+}
+
+.ml-main {
+    max-width: 1200px;
+    margin: 32px auto;
+}
+
+.ml-main-banner {
+    background: linear-gradient(90deg, #fffde7 0%, #ffe600 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 48px;
+    margin-bottom: 32px;
+    min-height: 280px;
+    position: relative;
+}
+
+.ml-main-banner-content {
+    max-width: 50%;
+}
+
+.ml-main-banner-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.ml-main-banner-content span {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.ml-main-banner-btn {
+    margin-top: 24px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ml-main-banner-img {
+    width: 260px;
+    height: 220px;
+    background: url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.5.1/mercadolibre/box.png') no-repeat center/contain;
+    border-radius: 8px;
+    background-color: #ffe600;
+}
+
+.ml-shortcuts {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+.ml-shortcut-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    padding: 20px 16px;
+    flex: 1;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ml-shortcut-icon {
+    width: 48px;
+    height: 48px;
+    background: #ffe600;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.ml-shortcut-card h3 {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.ml-shortcut-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.ml-shortcut-card a {
+    color: #3483fa;
+    font-size: 0.95rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ml-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.ml-section h2 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ml-section h2 a {
+    color: #3483fa;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.ml-products {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.ml-product-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    width: 220px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.logo1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 359px;
-    max-width: 134px;
+.ml-product-img {
+    width: 180px;
+    height: 180px;
+    background: #f5f5f5 url('https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/6.5.1/mercadolibre/empty-image.svg') no-repeat center/60%;
+    border-radius: 4px;
+    margin-bottom: 12px;
 }
 
-.search {
-    min-width: 480px;
-    max-width: 588px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0);
-    border-width: 1.5px;
-    padding: 4px;
-    height: 20px;
-    margin-left: 8px;
+.ml-product-info {
+    text-align: center;
+}
+
+.ml-product-title {
+    color: #222;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.ml-product-old-price {
+    color: #888;
+    font-size: 14px;
+    text-decoration: line-through;
+    display: block;
+}
+
+.ml-product-price {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.ml-product-discount {
+    color: #00a650;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.ml-product-cuotas {
+    color: #00a650;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.ml-product-envio {
+    color: #00a650;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
 }
