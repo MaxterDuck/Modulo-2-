@@ -1,19 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercadolibre</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>MercadoLibre - Clon Visual</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-   <header>
-    
-    <nav class="navbar">
-        <img class="logo1" src="./img/logo_large_plus@2x.webp">
-        <input type="text" class="search" value="Buscar productos,marcas y mas..." >
-        
-    </nav>
-  </header> 
+    <header class="ml-header">
+        <div class="ml-header-container">
+            <div class="ml-logo"></div>
+            <form class="ml-search">
+                <input type="text" placeholder="Buscar productos, marcas y más…" />
+                <button type="submit"></button>
+            </form>
+            <nav class="ml-nav">
+                <a href="#">Crear tu cuenta</a>
+                <a href="#">Ingresá</a>
+                <a href="#">Mis compras</a>
+            </nav>
+        </div>
+        <div class="ml-categories-bar">
+            <a href="#">Categorías</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Cupones</a>
+            <a href="#">Supermercado</a>
+            <a href="#">Moda</a>
+            <a href="#">Vender</a>
+            <a href="#">Ayuda / PQR</a>
+        </div>
+    </header>
+    <main class="ml-main">
+        <section class="ml-main-banner">
+            <div class="ml-main-banner-content">
+                <h1>ENVÍO GRATIS<br><span>EN TU PRIMERA COMPRA</span></h1>
+                <button class="ml-main-banner-btn">EXCLUSIVO EN APP</button>
+            </div>
+            <div class="ml-main-banner-img"></div>
+        </section>
+        <section class="ml-shortcuts">
+            <div class="ml-shortcut-card">
+                <div class="ml-shortcut-icon"></div>
+                <h3>Ingresa a tu cuenta</h3>
+                <p>Disfruta de ofertas y compra sin límites.</p>
+                <a href="#">Ingresar a tu cuenta</a>
+            </div>
+            <div class="ml-shortcut-card">
+                <div class="ml-shortcut-icon"></div>
+                <h3>Ingresa tu ubicación</h3>
+                <p>Consulta costos y tiempos de entrega.</p>
+                <a href="#">Ingresar ubicación</a>
+            </div>
+            <div class="ml-shortcut-card">
+                <div class="ml-shortcut-icon"></div>
+                <h3>Medios de pago</h3>
+                <p>Paga tus compras de forma rápida y segura.</p>
+                <a href="#">Conocer medios de pago</a>
+            </div>
+            <div class="ml-shortcut-card">
+                <div class="ml-shortcut-icon"></div>
+                <h3>Menos de $40.000</h3>
+                <p>Descubre productos con precios bajos.</p>
+                <a href="#">Mostrar productos</a>
+            </div>
+            <div class="ml-shortcut-card">
+                <div class="ml-shortcut-icon"></div>
+                <h3>Más vendidos</h3>
+                <p>Explora los productos que son tendencia.</p>
+                <a href="#">Ir a Más vendidos</a>
+            </div>
+            <div class="ml-shortcut-card">
+                <div class="ml-shortcut-icon"></div>
+                <h3>Compra protegida</h3>
+                <p>Puedes devolver tu compra gratis.</p>
+                <a href="#">Cómo funciona</a>
+            </div>
+        </section>
+        <section class="ml-section">
+            <h2>Oferta del día</h2>
+            <div class="ml-products">
+                <div class="ml-product-card">
+                    <div class="ml-product-img"></div>
+                    <div class="ml-product-info">
+                        <span class="ml-product-title">Nevera Mini Bar 70L</span>
+                        <span class="ml-product-old-price">$ 974.900</span>
+                        <span class="ml-product-price">$ 579.900 <span class="ml-product-discount">40% OFF</span></span>
+                        <span class="ml-product-cuotas">en 3 cuotas de $ 193.300 con 0% interés</span>
+                        <span class="ml-product-envio">Envío gratis</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ml-section">
+            <h2>Ofertas <a href="#">Mostrar todas las ofertas</a></h2>
+            <div class="ml-products">
+                <div class="ml-product-card">
+                    <div class="ml-product-img"></div>
+                    <div class="ml-product-info">
+                        <span class="ml-product-title">Afeitadora Philips</span>
+                        <span class="ml-product-old-price">$ 279.900</span>
+                        <span class="ml-product-price">$ 170.006 <span class="ml-product-discount">39% OFF</span></span>
+                        <span class="ml-product-cuotas">en 3 cuotas de $ 56.669 con 0% interés</span>
+                        <span class="ml-product-envio">Envío gratis</span>
+                    </div>
+                </div>
+                <!-- Más productos aquí -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>
