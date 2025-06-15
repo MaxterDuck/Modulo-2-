@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Weather in the planet</title>
+
   </head>
   <body>
-    <h1>Clima</h1>
     <main>
+    <header>
+    <h1 class="title">Weather in the planet</h1>
+    </header>
+    <div class="background-image">
+        <img src="./img/background.avif" alt="Weather background" class="weather-bg">
+    </div>
       <input type="text" id="city" name="city" >
-      <button type="button" id="send" onclick="getWeather()" >Enviar</button>
+      <button type="button" id="send-button" onclick="getWeather()" >Enviar</button>
       <h2>Ingrese ciudad a buscar</h2>
       <section>
         <div id="result"></div>
